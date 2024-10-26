@@ -5,8 +5,8 @@ REM Pull the latest changes from the main branch
 echo Pulling latest server data
 git pull origin main
 
-REM Start the Minecraft server
-start /wait java -Xmx1024M -Xms1024M -jar Minecraft-server-1.X.X.jar nogui
+REM Start the Minecraft server in a new window
+start "Minecraft Server" cmd /c java -Xmx1024M -Xms1024M -jar server.jar nogui
 
 REM Wait for the Minecraft server to stop
 echo Waiting for the Minecraft server to stop...
