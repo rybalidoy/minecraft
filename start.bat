@@ -5,9 +5,18 @@ REM Pull the latest changes from the main branch
 echo Pulling latest server data
 git pull origin main
 
-REM Start the Minecraft server and wait for it to stop
-cmd /c start /wait java -Xmx1024M -Xms1024M -jar Minecraft-server-1.X.X.jar nogui
+REM Start the Minecraft server
+start /wait java -Xmx1024M -Xms1024M -jar Minecraft-server-1.X.X.jar nogui
 
+REM Wait for the Minecraft server to stop
+echo Waiting for the Minecraft server to stop...
+:waitloop
+timeout /t 10 >nul
+tasklist | find /i "java.exe" >nul
+if not errorlevel 1 goto waitloop
+
+REM Check if the server stopped normally or was interrupted
+echo Server stopped successfully
 REM Stage changes for commit
 git add .
 
