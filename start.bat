@@ -1,27 +1,29 @@
 @echo off
-title Hanami Minecraft Server
+title Minecraft Server
+
+REM Function to handle shutdown and commit
+:shutdown_commit
+    echo Server stopped successfully
+    REM Stage changes for commit
+    git add .
+
+    REM Commit the changes
+    git commit -m "Automated commit: Minecraft server stopped and saved changes"
+
+    REM Push the changes to the remote repository
+    echo Pushing updates to GitHub
+    git push origin main
+    exit /B
 
 REM Pull the latest changes from the main branch
+echo Pulling latest server data
 git pull origin main
-echo Pull latest server data
 
-REM Start the Minecraft Server
-start /wait java -Xmx2048M -Xms1024M -jar server.jar nogui
+REM Start the Minecraft server
+start /wait java -Xmx1024M -Xms1024M -jar Minecraft-server-1.X.X.jar nogui
 
-REM Check if server stoppped normally
-
+REM Check if the server stopped normally or was interrupted
 IF ERRORLEVEL 1 (
-  echo Server stopped unexpectedly
+    echo Server stopped unexpectedly
 ) ELSE (
-  echo Server stopped successfully
-  REM Navigate to server directory
-  
-  git add .
-  REM Commit changes
-  git commit -m "Automated commit: Minecraft server stopped and saved changes"
-
-  REM Push the changes to the remote repository
-  git push origin main
-)
-
-pause
+    call :shutdown_commit
