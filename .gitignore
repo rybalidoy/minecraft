@@ -1,1 +1,2 @@
-logs/
+/logs/*
+server.properties
