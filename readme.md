@@ -1,1 +1,1 @@
-# Hanami
+# Hanami Minecraft Server
