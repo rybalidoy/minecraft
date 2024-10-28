@@ -32,6 +32,8 @@ if %errorlevel% neq 0 (
     REM Push the changes to the remote repository
     echo Pushing updates to GitHub
     git push origin minecraft
+
+    echo Server changes saved
 ) else (
     echo No changes to commit
 )
