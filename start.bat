@@ -3,7 +3,7 @@ title Minecraft Server
 
 REM Pull the latest changes from the main branch
 echo Pulling latest server data
-git pull origin main
+git pull origin minecraft
 
 REM Start the Minecraft server in a new window
 start "Minecraft Server" cmd /c java -Xmx2048M -Xms1024M -jar server.jar nogui
@@ -31,7 +31,7 @@ if %errorlevel% neq 0 (
 
     REM Push the changes to the remote repository
     echo Pushing updates to GitHub
-    git push origin main
+    git push origin minecraft
 ) else (
     echo No changes to commit
 )
