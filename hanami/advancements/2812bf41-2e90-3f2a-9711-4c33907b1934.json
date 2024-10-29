@@ -67,6 +67,7 @@
       "apple": "2024-10-27 10:53:45 +0800",
       "bread": "2024-10-27 11:24:29 +0800",
       "rotten_flesh": "2024-10-27 20:40:32 +0800",
+      "potato": "2024-10-29 15:06:28 +0800",
       "sweet_berries": "2024-10-27 22:39:29 +0800",
       "baked_potato": "2024-10-28 02:07:01 +0800",
       "cooked_salmon": "2024-10-28 02:54:19 +0800"
@@ -2646,15 +2647,6 @@
     },
     "done": true
   },
-  "minecraft:husbandry/bred_all_animals": {
-    "criteria": {
-      "minecraft:cow": "2024-10-29 11:48:26 +0800",
-      "minecraft:chicken": "2024-10-29 12:02:20 +0800",
-      "minecraft:pig": "2024-10-29 11:57:05 +0800",
-      "minecraft:sheep": "2024-10-29 11:57:25 +0800"
-    },
-    "done": false
-  },
   "minecraft:recipes/building_blocks/bricks": {
     "criteria": {
       "has_brick": "2024-10-29 10:25:04 +0800"
@@ -2673,9 +2665,42 @@
     },
     "done": true
   },
+  "minecraft:husbandry/bred_all_animals": {
+    "criteria": {
+      "minecraft:cow": "2024-10-29 11:48:26 +0800",
+      "minecraft:chicken": "2024-10-29 12:02:20 +0800",
+      "minecraft:pig": "2024-10-29 11:57:05 +0800",
+      "minecraft:sheep": "2024-10-29 11:57:25 +0800"
+    },
+    "done": false
+  },
   "minecraft:husbandry/breed_an_animal": {
     "criteria": {
       "bred": "2024-10-29 11:48:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_oak_wood": {
+    "criteria": {
+      "has_log": "2024-10-29 12:53:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/oak_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2024-10-29 12:53:51 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2024-10-29 13:53:55 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dripstone_block": {
+    "criteria": {
+      "has_pointed_dripstone": "2024-10-29 13:54:23 +0800"
     },
     "done": true
   },
