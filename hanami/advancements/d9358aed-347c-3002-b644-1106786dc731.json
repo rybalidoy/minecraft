@@ -61,7 +61,8 @@
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
       "apple": "2024-10-27 23:43:57 +0800",
-      "bread": "2024-10-27 11:20:44 +0800"
+      "bread": "2024-10-27 11:20:44 +0800",
+      "cooked_mutton": "2024-10-29 10:35:00 +0800"
     },
     "done": false
   },
@@ -594,6 +595,7 @@
       "minecraft:skeleton": "2024-10-27 12:15:26 +0800",
       "minecraft:spider": "2024-10-27 22:58:22 +0800",
       "minecraft:zombie": "2024-10-27 11:32:28 +0800",
+      "minecraft:creeper": "2024-10-29 11:47:54 +0800",
       "minecraft:drowned": "2024-10-28 00:51:47 +0800"
     },
     "done": false
@@ -1639,6 +1641,66 @@
   "minecraft:recipes/building_blocks/polished_tuff_from_tuff_stonecutting": {
     "criteria": {
       "has_tuff": "2024-10-28 01:56:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2024-10-29 10:32:25 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/copper_block": {
+    "criteria": {
+      "has_copper_ingot": "2024-10-29 10:37:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/brush": {
+    "criteria": {
+      "has_copper_ingot": "2024-10-29 10:37:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/copper_door": {
+    "criteria": {
+      "has_copper_ingot": "2024-10-29 10:37:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lightning_rod": {
+    "criteria": {
+      "has_copper_ingot": "2024-10-29 10:37:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/copper_trapdoor": {
+    "criteria": {
+      "has_copper_ingot": "2024-10-29 10:37:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2024-10-29 11:14:05 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2024-10-29 11:14:05 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/fermented_spider_eye": {
+    "criteria": {
+      "has_spider_eye": "2024-10-29 11:47:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/yellow_dye_from_dandelion": {
+    "criteria": {
+      "has_dandelion": "2024-10-29 11:23:45 +0800"
     },
     "done": true
   },
